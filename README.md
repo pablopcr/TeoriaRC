@@ -2,7 +2,7 @@
 # Curso 2019-2020
 ### Versión del documento: 1.0.0
 
-**Importante: este documento puede sufrir modificaciones durante el transcurso del cuatrimestre. Por favor, consulte la última versión del mismo en este repositorio** https://github.com/jcarpio/rc1920/blob/master/proyecto-rc.md
+**Importante: este documento puede sufrir modificaciones durante el transcurso del cuatrimestre. Por favor, consulte la última versión del mismo en este repositorio** https://github.com/jcarpio/rc1920/edit/master/proyecto-rc.md
 
 
 ## Descripción del proyecto:
@@ -32,7 +32,7 @@ Se realizarán dos entregas:
 
 ### Bibliografía
 
-[1] What is Knowledge Representation in AI? Techniques You Need To Know ( Faltan las Redes Bayesianas )
+[1] What is Knowledge Representation in AI? Techniques You Need To Know 
 https://www.edureka.co/blog/knowledge-representation-in-ai/
 
 [2] Knowledge Representation in Artificial intelligence  
