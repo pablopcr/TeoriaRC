@@ -23,6 +23,7 @@ Existen diferentes definiciones para razonamiento inteligente desde distintos ca
 
 
 Además, una buena RC cumple los siguientes puntos:
+
 	•	Es comprensible por los humanos, soporta la modularidad y la jerarquía de clases. Por ejemplo: Los pastores alemanes son perros que, a su vez, son animales.
 
 	•	Tiene consistencia. Un ejemplo de dos interpretaciones: 
@@ -40,6 +41,26 @@ Para terminar de comprender qué es una RC, es necesario definir el término inf
 
 
 # 2. TÉCNICAS DE RC
+
+Existen cinco técnicas para la Representación del Conocimiento:
+
+•	Representación Lógica
+
+•	Representación de Red Semántica
+
+•	Reglas de Producción
+
+•	Representación de Marcos
+
+•	Redes neuronales
+
+
+Estás técnicas están apoyadas en lenguajes y estos constan de dos aspectos básicos:
+
+•	Sintaxis, que explica cómo es la forma en la que se construyen las oraciones, combinando estructuras más sencillas. Por ejemplo: en la oración _Marina puerta la abre_, se puede decir que es sintácticamente errónea porque sus elementos están mal ordenados.
+
+•	Semántica, que explica la correspondencia entre los elementos del lenguaje y su significado.
+
 
 ## 2.1 REPRESENTACIÓN LÓGICA
 
