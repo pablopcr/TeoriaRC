@@ -84,7 +84,7 @@ Dentro de la representación lógica tenemos distintas técnicas lógicas:
 
 
 
-![foto1][files:documentacion/foto1.png]
+![foto1](files:./documentacion/foto1.png)
 
 VENTAJAS
 •	Facilidad de implementación
