@@ -64,6 +64,39 @@ Estás técnicas están apoyadas en lenguajes y estos constan de dos aspectos b�
 
 ## 2.1 REPRESENTACIÓN LÓGICA
 
+Técnica que permite llegar mediante el razonamiento a una conclusión, basándose en unas premisas dadas.
+Este razonamiento puede ser deductivo, donde la conclusión contiene conocimiento que es deducido de forma inmediata de las premisas. Un ejemplo de razonamiento deductivo seria, si todos los humanos son mortales, y Jonny Depp es humano, por lo que podemos deducir que Jonny Depp es mortal.
+ Por otra parte, el razonamiento también puede ser inductivo, que es la que se utiliza en esta representación, donde el conocimiento aportado por las premisas no se infiere directamente a la conclusión. Por ejemplo, si un pastor alemán y un bulldog ladran, podemos inferir que un husky siberiano ladra.
+Si llegamos a una conclusión por reglas de elementos del mismo tipo, como en el ejemplo anterior, no siempre tiene por qué ser verdad, pero es verdadero con una cierta probabilidad por lo que llamaremos a estos como razonamientos probabilísticos o plausibles.
+
+Dentro de la representación lógica tenemos distintas técnicas lógicas:
+•	Lógica clásica, son aquella que una conclusión es verdadera totalmente o falsa totalmente.
+
+•	Lógicas no clásicas (lógica difusa), son aquellas en la que algo es cierto con un grado de probabilidad.
+
+•	Lógica propositiva o lógica de enunciados, las cuales manejan preposiciones completas y podemos unirlas mediante conectores.
+
+•	Lógica de predicados de primer orden, en las cuales manejamos objetos, predicados sobre los objetos, propiedades (dueño de, hijo de), cuantificadores (muchos, pocos, nada) y conectores.
+
+•	Lógica de predicados de orden superior, es aquellos donde podemos hacer inferencias sobre la lógica.
+
+•	Lógica multivaluadas, son aquellas en las que tratamos con varios valores de verdad, introduciendo el valor ½ para las proposiciones cuya verdad está por determinar, cómo las proposiciones futuras.
+
+
+
+![foto1][files:documentacion/foto1.png]
+
+VENTAJAS
+•	Facilidad de implementación
+•	Similar al comportamiento humano
+•	Forma rápida y económica de resolver problemas
+DESVENTAJAS
+•	Ante problemas que tiene solución mediante un modelo matemático, obtenemos peor resultado.
+•	Existe muy pocas herramientas de depuración.
+•	Es poco utilizado en problemas reales.
+•	Dependiendo del problema, el motor de inferencia puede ser ineficiente. 
+
+
 ## 2.2 REPRESENTACIÓN DE RED SEMÁNTICA
 
 ## 2.3 REGLAS DE PRODUCCIÓN
