@@ -88,15 +88,23 @@ Dentro de la representación lógica tenemos distintas técnicas lógicas:
 </p>
 
 
-VENTAJAS
-•	Facilidad de implementación
-•	Similar al comportamiento humano
-•	Forma rápida y económica de resolver problemas
-DESVENTAJAS
-•	Ante problemas que tiene solución mediante un modelo matemático, obtenemos peor resultado.
-•	Existe muy pocas herramientas de depuración.
-•	Es poco utilizado en problemas reales.
-•	Dependiendo del problema, el motor de inferencia puede ser ineficiente. 
+**VENTAJAS**
+
+ •	 Facilidad de implementación
+
+ •	 Similar al comportamiento humano
+
+ •	 Forma rápida y económica de resolver problemas
+
+**DESVENTAJAS**
+
+ •	 Ante problemas que tiene solución mediante un modelo matemático, obtenemos peor resultado.
+
+ •	 Existe muy pocas herramientas de depuración.
+
+ •	 Es poco utilizado en problemas reales.
+
+ •	 Dependiendo del problema, el motor de inferencia puede ser ineficiente. 
 
 
 ## 2.2 REPRESENTACIÓN DE RED SEMÁNTICA
