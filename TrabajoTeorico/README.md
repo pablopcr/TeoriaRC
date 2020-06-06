@@ -7,9 +7,10 @@ La comprensión del concepto de Representación del Conocimiento (RC a partir de
 
 3.	Rol 3: Una RC es una Teoría Parcial del Razonamiento Inteligente, expresada en términos de 3 componentes:
 
-a.	La concepción fundamental de la representación del razonamiento inteligente.
-b.	El conjunto de inferencias que la representación establece.
-c.	Conjunto de inferencias que recomienda.
+	a.	La concepción fundamental de la representación del razonamiento inteligente.
+	b.	El conjunto de inferencias que la representación establece.
+	c.	Conjunto de inferencias que recomienda.
+
 Existen diferentes definiciones para razonamiento inteligente desde distintos campos de estudio, como la matemática (variedad de cálculos formales, típicamente deducibles) o la psicología (comportamiento humano característico), entre otros muchos.
 
 4.	Rol 4: Medio para computación pragmática eficiente, es decir, el entorno computacional en el que se realiza el pensamiento. Organiza la información para facilitar las inferencias.
