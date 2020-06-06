@@ -83,8 +83,10 @@ Dentro de la representación lógica tenemos distintas técnicas lógicas:
 •	Lógica multivaluadas, son aquellas en las que tratamos con varios valores de verdad, introduciendo el valor ½ para las proposiciones cuya verdad está por determinar, cómo las proposiciones futuras.
 
 
+<p align="center">
+        <img src="./documentacion/foto1.png">
+</p>
 
-![foto1](files:./documentacion/foto1.png)
 
 VENTAJAS
 •	Facilidad de implementación
