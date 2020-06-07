@@ -70,6 +70,7 @@ Este razonamiento puede ser deductivo, donde la conclusión contiene conocimient
 Si llegamos a una conclusión por reglas de elementos del mismo tipo, como en el ejemplo anterior, no siempre tiene por qué ser verdad, pero es verdadero con una cierta probabilidad por lo que llamaremos a estos como razonamientos probabilísticos o plausibles.
 
 Dentro de la representación lógica tenemos distintas técnicas lógicas:
+
 •	Lógica clásica, son aquella que una conclusión es verdadera totalmente o falsa totalmente.
 
 •	Lógicas no clásicas (lógica difusa), son aquellas en la que algo es cierto con un grado de probabilidad.
