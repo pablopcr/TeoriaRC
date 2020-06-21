@@ -78,7 +78,7 @@ examples(Ns) :- findall(N, (name(N),class(C), classof(N, C)), Ns).
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /*
-    call(+X)--> Se hace cierto cuando cumple X
+    call(+X)--> Se hace cierto cuando X es cierto
     X =.. Lista --> X unifica con una lista que termina con Lista. ej: X = [_,Lista] 
 */
 
