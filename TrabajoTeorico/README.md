@@ -1,4 +1,6 @@
-# 1. INTRODUCCIÓN
+# TRABAJO TEÓRICO
+
+## 1. INTRODUCCIÓN
 
 La comprensión del concepto de Representación del Conocimiento (RC a partir de ahora) es más entendible si es abordada en términos de los cinco posibles roles que desempeña.  Estos roles se resumen de la siguiente forma:
 1.	Rol 1: Una RC es un sustituto, reemplazo de la cosa misma, utilizado para permitir a una entidad determinar consecuencias pensando en lugar de actuar.
@@ -40,7 +42,7 @@ Para terminar de comprender qué es una RC, es necesario definir el término inf
 
 
 
-# 2. TÉCNICAS DE RC
+## 2. TÉCNICAS DE RC
 
 Existen cinco técnicas para la Representación del Conocimiento:
 
@@ -62,7 +64,7 @@ Estás técnicas están apoyadas en lenguajes y estos constan de dos aspectos b�
  •	Semántica, que explica la correspondencia entre los elementos del lenguaje y su significado.
 
 
-## 2.1 REPRESENTACIÓN LÓGICA
+### 2.1 REPRESENTACIÓN LÓGICA
 
 Técnica que permite llegar mediante el razonamiento a una conclusión, basándose en unas premisas dadas.
 Este razonamiento puede ser deductivo, donde la conclusión contiene conocimiento que es deducido de forma inmediata de las premisas. Un ejemplo de razonamiento deductivo seria, si todos los humanos son mortales, y Jonny Depp es humano, por lo que podemos deducir que Jonny Depp es mortal.
@@ -71,7 +73,7 @@ Si llegamos a una conclusión por reglas de elementos del mismo tipo, como en el
 
 Dentro de la representación lógica tenemos distintas técnicas lógicas:
 
-•	Lógica clásica, son aquella que una conclusión es verdadera totalmente o falsa totalmente.
+•	Lógica clásica, es aquella donde una conclusión es verdadera totalmente o falsa totalmente.
 
 •	Lógicas no clásicas (lógica difusa), son aquellas en la que algo es cierto con un grado de probabilidad.
 
@@ -108,10 +110,49 @@ Dentro de la representación lógica tenemos distintas técnicas lógicas:
  •	 Dependiendo del problema, el motor de inferencia puede ser ineficiente. 
 
 
-## 2.2 REPRESENTACIÓN DE RED SEMÁNTICA
+### 2.2 REPRESENTACIÓN DE RED SEMÁNTICA
+Técnica que permite representar mediante un gráfico cómo se interrelacionan las palabras. Es una alternativa a la lógica de predicados.
+La red está formada por nodos, representando los objetos, y arcos, representando la relación entre esos objetos. Además, esta representación permite crear categorías de los distintos objetos y relacionarlas de distintas maneras. 
+Existen dos formas para presentar una red semántica:
 
-## 2.3 REGLAS DE PRODUCCIÓN
+-	Mediante un grafo: Conjunto de elementos denominados nodos o vértices que se conectan a través de enlaces conocidos como arcos o aristas. (Ilustración 1).
 
-## 2.4 REPRESENTACIÓN DE MARCOS
+<p align="center">
+        <img src="./documentacion/redSemanticaGrafo.png">
+</p>
 
-## 2.5 REDES NEURONALES
+-	Mediante un árbol: red semántica que no presenta un ciclo.
+
+**VENTAJAS**
+-	Las redes semanticas son una representación natural del conocimiento.
+-	Transmite significado de manera transparente.
+-	Redes simples y fáciles de entender.
+
+**DESVENTAJAS**
+-	Conllevan un gran tiempo de ejecución, son de alto coste computacional.
+-	No son inteligentes, dependen del creador del sistema.
+
+### 2.3 REGLAS DE PRODUCCIÓN
+Técnica que utiliza reglas del estilo Si-Entonces. Es bastante popular, ya que se ha conseguido construir varios sistemas expertos ya con ella. Una herramienta muy conocida que utiliza esta técnica es CLIPS.
+Su estructura general se basa en: Antecedente -> Consecuente.
+El antecedente contiene la clausula a cumplir para que se ejecute la regla, y el consecuente contiene la conclusión de la premisa o la acción a realizar.
+Cuando se cumple un antecedente esa regla se ejecuta, pero para seleccionar una regla cuando hay varias disponibles, utiliza un método de resolución de conflicto.
+
+**VENTAJAS**
+-	Representan de forma natural el conocimiento explícito de los expertos.
+-	Todas las relgas tienen la misma estructura.
+-	Separación entre base de conocimiento y su procsamiento.
+-	Capacidad para trabajar con conocimiento incompleto e incertidumbre.
+
+**DESVENTAJAS**
+-	Incapaz de aprender.
+-	Estrategias de búsquedas muy ineficientes.
+-	Con un gran número de reglas, es difícil saber qué papel toma una de ellas en concreto.
+
+### 2.4 REPRESENTACIÓN DE MARCOS
+Esta representación se basa en la conducta humana de intentar resolver situaciones nuevas relacionándola con otras anteriores. Por ejemplo, cuando vamos a entrar en un piso nuevo, nos esperamos ver una cocina, un salón un baño, etc.
+Al igual que las redes semánticas, podemos entender los marcos como una red de nodos, los cuales están compuesto por atributos y valores. La diferencia entre las redes semánticas y los marcos es que estos últimos se ordenan mediante herencia. Esto es lo que dio pie al concepto que conocemos como orientación a objetos.
+Los marcos funcionan procesando la información recibida activando algunos marcos relacionados con esta información, y estos marcos a su vez activa a otros. Esto es denominado reconocimiento descendente y tiene el objetivo de predecir y explicar la información que se va a encontrar en la situación.
+
+
+### 2.5 REDES NEURONALES
