@@ -79,7 +79,7 @@ name(riddler).
 
 Estos personajes tienen atributos, pero no clases.
 
-Para comprobar el funcionamiento del algoritmo, se ha creado el fichero [tests.pl](https://www.google.com/search?client=firefox-b-d&q=id3+prolog). En él se han implementado 2 tests:
+Para comprobar el funcionamiento del algoritmo, se ha creado el fichero [tests.pl](https://github.com/pablopcr/TeoriaRC/blob/master/TrabajoPractico/id3/tests.pl). En él se han implementado 2 tests:
 
 **test 1**: Devuelve el ábol que genera el conjunto de entrenamiento.
 
