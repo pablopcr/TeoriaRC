@@ -154,5 +154,8 @@ Esta representación se basa en la conducta humana de intentar resolver situacio
 Al igual que las redes semánticas, podemos entender los marcos como una red de nodos, los cuales están compuesto por atributos y valores. La diferencia entre las redes semánticas y los marcos es que estos últimos se ordenan mediante herencia. Esto es lo que dio pie al concepto que conocemos como orientación a objetos.
 Los marcos funcionan procesando la información recibida activando algunos marcos relacionados con esta información, y estos marcos a su vez activa a otros. Esto es denominado reconocimiento descendente y tiene el objetivo de predecir y explicar la información que se va a encontrar en la situación.
 
+<p align="center">
+        <img src="./documentacion/marcos.png">
+</p>
 
 ### 2.5 REDES NEURONALES
