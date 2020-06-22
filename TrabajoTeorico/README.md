@@ -161,3 +161,10 @@ Los marcos funcionan procesando la información recibida activando algunos marco
 </p>
 
 ### 2.5 REDES NEURONALES
+Este método de RC se explicará en profundidad en el apartado siguiente.
+
+## EN DETALLE: REDES NEURONALES
+
+## BIBLIOGRAFÍA
+
+
