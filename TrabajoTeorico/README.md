@@ -163,7 +163,28 @@ Los marcos funcionan procesando la información recibida activando algunos marco
 ### 2.5 REDES NEURONALES
 Este método de RC se explicará en profundidad en el apartado siguiente.
 
-## EN DETALLE: REDES NEURONALES
+## 3. EN DETALLE: REDES NEURONALES
+Las Redes Neuronales conforman un campo muy importante dentro de la Inteligencia Artificial. Este modelo se inspira en el comportamiento conocido del cerebro humano (en lo referente a las neuronas y sus conexiones) y trata de crear modelos artificiales que solucionen problemas difíciles de resolver mediante técnicas algorítmicas convencionales.
+
+El objetivo es obtener información útil para la toma de decisiones. Una red neuronal simula el modo en el que el cerebro humano procesa la información.
+
+### 3.1 FUNCIONAMIENTO
+
+Inspiradas en el sistema nervioso y el comportamiento biológico, las redes neuronales crean un sistema de interconexión en capas de neuronas artificiales que colaboran para procesar datos de entrada y generar salidas.
+
+Al ser un modelo computacional, las Redes Neuronales Artificiales (RNA) utilizan elementos de proceso (EP o nodos, que simulan las neuronas) y enlaces (simulan las conexiones entre neuronas). Los nodos y conexiones de la RNA se organizan en capas.
+
+<p align="center">
+        <img src="./documentacion/RNA.png">
+</p>
+
+Con la experiencia, o repetición de sucesos, las neuronas van creando y reforzando ciertas conexiones, con el objetivo de aprender y hacer que algo se quede fijo.
+
+A pesar del enfoque biológico, las RNA han terminado siendo un conjunto de elementos matemáticos y estadísticos. Se basan en una idea sencilla: dados unos parámetros hay una forma de combinarlos para predecir un cierto resultado. 
+
+Las redes neuronales son un modelo para encontrar esa combinación de parámetros y aplicarla al mismo tiempo. Encontrar la mejor combinación de parámetros se denomina “entrenamiento de la red”, y da lugar al proceso de aprendizaje.
+
+Una red entrenada es usada luego para realizar predicciones o clasificaciones. Es capaz de hacerlo mediante la aplicación de los parámetros correctos.
 
 ## BIBLIOGRAFÍA
 
