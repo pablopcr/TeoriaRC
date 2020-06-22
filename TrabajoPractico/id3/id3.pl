@@ -84,7 +84,7 @@ examples(Ns) :- findall(N, (name(N),class(C), classof(N, C)), Ns).
 
 call1(F, X) :- G=.. [F,X], call(G).
 
-%% sameclass(+Ns, ?C) --> Es cierto si todos los nobres de Ns son de la clase C
+%% sameclass(+Ns, ?C) --> Es cierto si todos los nombres de Ns son de la clase C
 /*
     ! --> Descarta todos los puntos de elección creados desde que se inicio el predicado en el que aparece.
 */
@@ -99,16 +99,16 @@ filterByClass(Ns,C,Rs):- findall(N, (member(N,Ns),class(C),name(N),classof(N,C))
 
 attributes(As):-findall(A,attribute(A),As),!.
 
-%% proportion(+Ns, +C, +A, ?P)--> P son las proposiciones de la clase C que esta en la lista Ns para los cuales el atributo A es verdadero.
+%% proportion(+Ns, +C, +A, ?P)--> P son las proposiciones de la clase C que esta en la lista Ns para los cuales el atributo A es cierto.
 proportion([],_,_,0),!.
 proportion(Ns, C, A, 0):- attribute(A),class(C), partition(Ns,A,NT,NF), filterByClass(NT,C,Rs), length(Rs,TLista),length(NT,T),T=0.
 proportion(Ns, C, A, P):- attribute(A),class(C), partition(Ns,A,NT,NF), filterByClass(NT,C,Rs), length(Rs,TLista),length(NT,T),T>0,P is (TLista/T).
 
 /*
-    log(+X,-Y)--> Realiza el log de base 10 de X y lo unifica con Y.
-    sum(+[Cabeza|Resto],+Ns,+A,+Acc,-E) --> En el caso que resto unifique con [], y P unifique con 0, E unifica con Acc. En el caso que E unifique con [] y P sea mayor
+    log(+X,-Y)--> Se hace verdadero si el logaritmo de base 10 de X unifica con Y.
+    sum(+[Cabeza|Resto],+Ns,+A,+Acc,-E) --> En el caso que el resto unifique con [], y P unifique con 0, E unifica con Acc. En el caso que E unifique con [] y P sea mayor
     que 0, E unifica con (Acc +P * log(P)). En el caso que Resto no unifique con [], se procede como los predicados anteriores, pero con la diferencia que se consulta
-    otra vez a sum siendo [Cabeza2|Resto2] = Resto.
+    otra vez a sum/5 siendo [Cabeza2|Resto2] = Resto.
 */
 sum([C|Cs],Ns,A,Acc,E):-  proportion(Ns,C,A,P), P=0, A1 is (Acc+0),sum(Cs,Ns,A,A1,E).
 sum([C|Cs],Ns,A,Acc,E):-  proportion(Ns,C,A,P), P>0, log(P,R), A1 is (Acc+P*R),sum(Cs,Ns,A,A1,E).

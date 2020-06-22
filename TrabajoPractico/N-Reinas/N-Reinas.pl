@@ -19,7 +19,7 @@
 
 % The first version is a simple generate-and-test solution.
 
-% queens_1(+N,-Qs) :- Qs es la soluccion del problema
+% queens_1(+N,-Qs) :- Qs es la solución del problema
 
 
 queens_1(N,Qs) :- range(1,N,Rs), permu(Rs,Qs), test(Qs).
@@ -54,17 +54,15 @@ del(X,[Y|Ys],[Y|Zs]) :- del(X,Ys,Zs).
 /*
 * test(+Qs)--> Es cierto si se hace cierto test(Qs,1,[],[])
 
-*test(+L1,+C,+L2,+L3)--> Se hace cierto cuando cada elemento de L1-C no unifica con ningun elemento de L2 y L1+C no unifica con ningun elemento de L3.
+*test(+L1,+C,+L2,+L3)--> Se hace cierto cuando cada elemento de L1-C no unifica con ningún elemento de L2 y L1+C no unifica con ningun elemento de L3.
 El caso base que utilizaremos, es cuando L1 esta vacía.
 
-*memberchk(?E,+L)--> Es cierto cuand E unifica con algun elemento de la lista L
+*memberchk(?E,+L)--> Es cierto cuando E unifica con algunun elemento de la lista L
 * \+ A --> es cierto cuando A no se haga cierta.
 */
 
 test(Qs) :- test(Qs,1,[],[]).
 
-% test(Qs,X,Cs,Ds) :- the queens in Qs, representing columns X to N,
-% are not in conflict with the diagonals Cs and Ds
 
 test([],_,_,_).
 test([Y|Ys],X,Cs,Ds) :- 
@@ -81,9 +79,9 @@ test([Y|Ys],X,Cs,Ds) :-
 /*
 queens_2(+N,-Qs)--> Qs es la solucción del problema. La diferencia con queens_1(+N,-Qs) es que llama a permu_test/4
 
-permu_test(+L1,+L2,+C,+L3,+L4)--> Se hace cierto cuando cada elemento de L1-C no unifica con ningun elemento de L2 y L1+C no unifica con ningun elemento de L3 y ademas
+permu_test(+L1,+L2,+C,+L3,+L4)--> Se hace cierto cuando cada elemento de L1-C no unifica con ningún elemento de L2 y L1+C no unifica con ningún elemento de L3 y además
 L2 tiene que ser una permutacion de L1.
-El caso base que utilizaremos, es cuando L1 esta vacía.
+El caso base que utilizaremos, es cuando L1 está vacía.
 
 */
 
