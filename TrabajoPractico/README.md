@@ -88,10 +88,13 @@ Para comprobar el funcionamiento del algoritmo, se ha creado el fichero [tests.p
 Los resultados de estos tests son:
 
 ?- test(1,R).
+
 R = node(cape, leaf(good), node(mask, leaf(evil), node(ears, leaf(evil), node(smoker, leaf(evil), node(tie, leaf(good), leaf(evil)))))) ;
+
 false.
 
 ?- test(2,R).
+
 R = [(riddler, evil),  (batgirl, good)].
 
 
