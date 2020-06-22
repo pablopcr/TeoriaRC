@@ -186,6 +186,83 @@ Las redes neuronales son un modelo para encontrar esa combinación de parámetro
 
 Una red entrenada es usada luego para realizar predicciones o clasificaciones. Es capaz de hacerlo mediante la aplicación de los parámetros correctos.
 
+
+
+### 3.2 UTILIDADES
+
+Las RNA tienen capacidad de aprender de forma automática, proceso conocido como machine learning.
+
+Algunas de las RNA son:
+
+-	Sistemas Inteligentes para la toma de decisiones en la gestión empresarial.
+-	Predicción.
+-	Reconocimiento de tendencias.
+-	Reconocimiento de patrones y gestión de riesgo, aplicados por ejemplo a la detección de fraude.
+-	Artefactos inteligentes con capacidad de aprendizaje, por ejemplo, los altavoces inteligentes.
+-	Hogar inteligente o domótica.
+-	Sistemas de visión computacional y detección.
+-	Vehículos autónomos y energías renovables.
+
+
+### 3.2 UTILIDADES
+
+Para un mejor entendimiento del funcionamiento de las RNA, se va a desarrollar el siguiente
+ejemplo.
+
+_Somos 6 alumnos de una clase en la que el profesor no ha dicho exactamente cómo va a poner
+las notas. Sólo hemos hecho dos exámenes y tenemos la nota de cada uno de ellos y la final._
+
+<p align="center">
+        <img src="./documentacion/ejemplo1.png">
+</p>
+
+_Siguiendo la ilustración 5, asignamos a las entradas (n1 y n2) las notas, cada una con su
+correspondiente peso (w1, w2, elementos no definidos). La salida, nf, será 1 si un alumno está
+aprobado y 0 si no lo está._
+
+Para saber el valor de cada examen, tan solo hace falta recurrir al elemento fundamental de una
+RNA: el perceptrón (EP). Tiene varias entradas, con un peso cada una. Si la suma de esas entradas
+por cada peso es mayor que un determinado número (5, que es la nota del aprobado), la salida
+del perceptrón es uno. En caso contrario, la salida es cero.
+
+
+Los pesos no están definidos en el ejemplo, por lo que es lo que tenemos que encargarnos de
+identificar mediante el entrenamiento. Se comenzará con una asignación aleatoria de valores a
+esos pesos, 0.5 y 0.5, el mismo peso a cada examen, y ver qué resultado da la red neuronal para
+cada alumno. Si falla en algún caso, hay que reajustar los parámetros. Así hasta que nadie falle.
+
+La idea del ajuste o retroalimentación es ir adaptando la red a la información “oculta” que tienen
+los datos que pasamos para que aprenda.
+
+_Se da una situación curiosa: dos alumnos que tienen la misma nota en los exámenes, dos dices,
+pero uno tiene un 7 en el trabajo y otro un 4. El del 7 ha aprobado el curso, pero el del 4 no. Hay
+otro alumno que tiene un 10 en el trabajo y 4.99 en los dos exámenes y que está suspenso._
+
+Para resolver esta ampliación del caso anterior, es necesario tener capas. Se necesita un
+perceptrón intermedio que diga si el trabajo está aprobado o no, y contar eso en el perceptrón
+de salida. Una posibilidad sería como la red de la ilustración siguiente:
+
+
+
+### 3.4 REDES MULTICAPA
+
+El ejemplo anterior es tan simple que con un solo perceptrón puede resolverse. Sin embargo, en
+otros tipos de problemas, se requieren redes neuronales mucho más eficientes y elaboradas.
+Para ello, se crean las capas. Siguiendo con el ejemplo anterior:
+
+<p align="center">
+        <img src="./documentacion/ejemplo2.png">
+</p>
+
+Con esto se ha logrado añadir información que no estaba antes. En función del problema
+estudiado, pueden incluirse todas las capas que sean necesarias, y conectar los perceptrones
+según convenga.
+
+La mayor ventaja viene cuando, durante el proceso de aprendizaje, cada capa aprende a
+encontrar y detectar las características que mejor ayudan a clasificar los datos. La idea es que
+con más capas con más neuronas cada una se puedan mejorar las predicciones en conjuntos de
+datos más complicados.
+
 ## BIBLIOGRAFÍA
 
 [1] https://www.nebrija.es/~cmalagon/ia/transparencias/representacion_del_conocimiento_prolog.pdf
@@ -201,3 +278,9 @@ Una red entrenada es usada luego para realizar predicciones o clasificaciones. E
 [6] https://www.cs.us.es/cursos/ia2-2003/temas/tema-03.pdf
 
 [7] https://github.com/pablopcr/TeoriaRC/blob/master/TrabajoTeorico/documentacion/1029-Article%20Text-1026-1-10-20080129.pdf
+
+[8] https://www.xataka.com/robotica-e-ia/las-redes-neuronales-que-son-y-por-queestan-volviendo
+
+[9] http://avellano.fis.usal.es/~lalonso/RNA/index.htm
+
+[10] https://empresas.blogthinkbig.com/redes-neuronales-artificiales/
