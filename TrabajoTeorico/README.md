@@ -167,4 +167,16 @@ Este método de RC se explicará en profundidad en el apartado siguiente.
 
 ## BIBLIOGRAFÍA
 
+[1] https://www.nebrija.es/~cmalagon/ia/transparencias/representacion_del_conocimiento_prolog.pdf
 
+[2] https://es.wikipedia.org/wiki/Representaci%C3%B3n_del_conocimiento
+
+[3] http://www.cs.us.es/~fsancho/?e=103
+
+[4] https://itziasite.wordpress.com/redes-de-marcos/
+
+[5] http://www.uco.es/grupos/eatco/informatica/ia/tema1.pdf
+
+[6] https://www.cs.us.es/cursos/ia2-2003/temas/tema-03.pdf
+
+[7] https://github.com/pablopcr/TeoriaRC/blob/master/TrabajoTeorico/documentacion/1029-Article%20Text-1026-1-10-20080129.pdf
