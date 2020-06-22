@@ -7,7 +7,7 @@
 ## Introducción
 Hemos cogido el código de un id3 y otro código que resuelve el problema de las N-Reinas, para analizarlos y comentar como funciona cada predicado.
 
-El ID3 es un árbol de decisión, el cual se encarga de elegir en cada momento el mejor atributo mediante una heurística. Fue desarrollado por J. Ross Quinlan en 1983 y sus siglas significa “Induction Decision Trees”.
+El ID3 es algoritmo que genera un árbol de decisión, el cual se encarga de elegir en cada momento el mejor atributo mediante una heurística. Fue desarrollado por J. Ross Quinlan en 1983 y sus siglas significa “Induction Decision Trees”. El algoritmo, mediante un conjunto de entrenamiento, crea el árbol que mejor clasifica al conjunto de entrenamiento. Una vez creado el árbol, es capaz de clasificar nuevos elementos, fijándose en sus atributos, en una de las clases (las clases están en los nodos hoja).
 
 El problema de las N-Reinas es un problema muy conocido en el ámbito de la computación y las matemáticas. Computacionalmente es muy fácil resolverlo, pero matemáticamente incluso se está ofreciendo 1.000.000$ a la persona que encuentre el polinomio que resuelva el problema de las 1000-Reinas.
 Este problema consiste en un tablero de N filas y N columnas donde tenemos que colocar a N reinas del ajedrez, sin que ninguna pueda comerse, sabiendo que se pueden desplazar todas las posiciones horizontales y diagonales que deseen.
@@ -62,6 +62,37 @@ En el caso que E unifique con [] y P sea mayor que 0, E unifica con (Acc +P * lo
 **clasification(+Ns, ?Xs)**--> Xs unifica con una lista de (N,C) tal que N unifica con un elemento de Ns y C es la clase de ese elemento.
 
 ### Resultados 
+
+El conjunto de entrenamiento aparece en el documento tal, líneas tal tal:
+
+classof(batman, good).
+classof(robin, good).
+classof(alfred, good).
+classof(penguin, evil).
+classof(catwoman, evil).
+classof(joker, evil).
+
+Para ejecutar el algoritmo ID3 se han creado nuevos personajes:
+
+name(batgirl).
+name(riddler).
+
+Estos personajes tienen atributos, pero no clases.
+
+Para comprobar el funcionamiento del algoritmo, se ha creado el fichero [tests.pl](https://www.google.com/search?client=firefox-b-d&q=id3+prolog). En él se han implementado 2 tests:
+
+**test 1**: Devuelve el ábol que genera el conjunto de entrenamiento.
+
+**test 2**: Clasifica todos los personajes que no tienen clase (no pertenecen al conjunto de entrenamiento).
+
+Los resultados de estos tests son:
+
+?- test(1,R).
+R = node(cape, leaf(good), node(mask, leaf(evil), node(ears, leaf(evil), node(smoker, leaf(evil), node(tie, leaf(good), leaf(evil)))))) ;
+false.
+
+?- test(2,R).
+R = [(riddler, evil),  (batgirl, good)].
 
 
 ## N-Reinas
